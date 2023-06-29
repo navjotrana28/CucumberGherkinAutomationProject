@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: api.runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 2.94 sec <<< FAILURE!
+GET request to retrieve the token(API Tests)  Time elapsed: 2.304 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at api.stepdefinitions.ApiTestSetup.verifyToken(ApiTestSetup.java:79)
+	at ✽.the response body should contain the token(file:///C:/Users/navjot/AndroidStudioProjects/OpenHIEDemo/src/test/java/api/features/demoTest.feature:17)
+
+GET request to retrieve user information(API Tests)  Time elapsed: 0.326 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.asString()" because "this.response" is null
+	at api.stepdefinitions.ApiTestSetup.verifyResponseStatusCode(ApiTestSetup.java:53)
+	at ✽.the response status code should be 200(file:///C:/Users/navjot/AndroidStudioProjects/OpenHIEDemo/src/test/java/api/features/demoTest.feature:28)
+
